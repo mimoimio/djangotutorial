@@ -5,10 +5,17 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+        </ul>
+    </nav>
+    <h1>Polls</h1>
     {% if latest_question_list%}
     <ul>
         {% for question in latest_question_list %}
-        <li><a href="{% url 'detail' question.id %}">{{question.question_text}}</a></li>
+        <li><a href="{% url 'polls:detail' question.id %}">{{question.question_text}}</a></li>
         {% endfor %}
     </ul>
     {% else %}
