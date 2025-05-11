@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/Shanghai'
+TIME_ZONE = "Asia/Kuala_Lumpur"   # Malaysia Standard Time (UTC+08:00)
 
 USE_I18N = True
 
