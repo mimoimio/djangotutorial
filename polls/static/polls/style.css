@@ -1,0 +1,8 @@
+li a {
+    color: oklch(0.6 0.3 320)
+}
+
+body {
+    background: url("images/background.jpeg") center no-repeat fixed;
+    background-size: cover;
+}
